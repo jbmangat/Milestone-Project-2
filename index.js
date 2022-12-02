@@ -1,0 +1,25 @@
+// DEPENDENCIES
+const express = require('express')
+
+// CONFIG
+require('dotenv').config()
+const app = express()
+
+// MIDDLEWARE
+
+
+// ROUTES
+app.get('/', (req, res) => {
+    res.send('Workout time!')
+})
+
+// CONTROLLERS
+
+
+// 404 ERROR PAGE
+app.get('*', (req, res) => {
+    res.send('404')
+})
+
+// LISTEN
+app.listen(process.env.PORT)
