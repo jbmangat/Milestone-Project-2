@@ -14,7 +14,8 @@ app.get('/', (req, res) => {
 })
 
 // CONTROLLERS
-
+const workoutController = require('./controllers/workout_controller')
+app.use('/workout', workoutController)
 
 // 404 ERROR PAGE
 app.get('*', (req, res) => {
