@@ -1,4 +1,6 @@
+
 import React from "react";
+
 
 function Navbar() {
 
@@ -24,11 +26,13 @@ function Navbar() {
     } 
 
     return (
-        <div className='nav'>
+        <nav className="nav">
             <div className='header'>
                 <button className='home-btn'>Home</button>
                 Fitness App
+                
                 <button className='add-btn'>Add Work Out</button>
+                
             </div>
             <div className='days'>
                 <button className="monday">MONDAY</button>
@@ -39,7 +43,7 @@ function Navbar() {
                 <button className="saturday">SATURDAY</button>
                 <button className="sunday">SUNDAY</button>
             </div>
-        </div>
+        </nav>
     );
 } 
 
