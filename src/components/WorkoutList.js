@@ -1,7 +1,10 @@
-import React, { useContext, useSyncExternalStore } from "react";
+import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { Link } from "react-router-dom";
-import { ListGroup, ListGroupItem, Button } from "react-bootstrap";
+import { 
+    ListGroup,
+    ListGroupItem, 
+    Button } from "reactstrap";
 
 export const WorkoutList = () => {
     const { workouts, removeWorkout } = useContext(GlobalContext);
@@ -14,7 +17,7 @@ export const WorkoutList = () => {
                         <ListGroupItem className="d-flex">
                             <strong>{workout.name}</strong>
                             <div className="ml-auto">
-                                <Link className="btn btn-warning mr-1" to={`/edit/${user.id}`}>
+                                <Link className="btn btn-warning mr-1" to={`/edit/${workout.id}`}>
                                     Edit
                                 </Link>
                                 <Button onCLick={() => removeWorkout(workout.id)} color="danger">Delete</Button>

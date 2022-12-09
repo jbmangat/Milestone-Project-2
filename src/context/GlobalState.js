@@ -7,11 +7,11 @@ const initialState = {
 }
 
 // Create Context
-export const GlobalContext = createContext(initalState);
+export const GlobalContext = createContext(initialState);
 
 // Provider Component
 export const GlobalProvider = ({ children }) => {
-    const [state, dispatch] = ussReducer(AppReducer, initalState);
+    const [state, dispatch] = useReducer(AppReducer, initialState);
 
     // Actions
     const removeWorkout = (id) => {
@@ -21,7 +21,7 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
-    const addWorkout = (workout) => {
+    const addWorkouts = (workout) => {
         dispatch({
             type: 'ADD_WORKOUT',
             payload: workout
@@ -39,7 +39,7 @@ export const GlobalProvider = ({ children }) => {
         <GlobalContext.Provider value={{
             workouts: state.workouts,
             removeWorkout, 
-            addWorkout,
+            addWorkouts,
             editWorkout
         }} >
         { children }

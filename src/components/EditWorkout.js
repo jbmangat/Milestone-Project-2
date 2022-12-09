@@ -1,7 +1,13 @@
 import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { Link, useHistory } from "react-router-dom";
-import { Form, FormGroup, Label, Input, Button } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import { 
+    Form, 
+    FormGroup, 
+    Label, 
+    Input, 
+    Button 
+} from "reactstrap";
 
 export const EditWorkout = (props) => {
     const [selectedWorkout, setSelectedWorkout] = useState({
@@ -10,7 +16,7 @@ export const EditWorkout = (props) => {
     });
     const { workouts, editWorkout } = useContext(GlobalContext);
 
-    const history = useHistory();
+    const history = useNavigate();
 
     const currentWorkoutId = props.match.params.id; 
 

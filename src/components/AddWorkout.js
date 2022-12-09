@@ -1,21 +1,27 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-import { Form, FormGroup, Label, Input, Button } from "react-bootstrap";
+import { 
+    Form, 
+    FormGroup, 
+    Label, 
+    Input, 
+    Button 
+} from "reactstrap";
 
 export const AddWorkout = () => {
     const [name, setName] = useState('');
-    const { addWorkout } = useContext(GlobalContext);
+    const { addWorkouts } = useContext(GlobalContext);
 
-    const history = useHistory();
+    const history = useNavigate();
 
     const onSubmit = () => {
         const newWorkout = {
             id: uuid(),
             name
         }
-        addWorkout(newWorkout);
+        addWorkouts(newWorkout);
         history.push('/');
     }
 
@@ -36,4 +42,4 @@ export const AddWorkout = () => {
             </Link>
         </Form>
     );
-};
+}
