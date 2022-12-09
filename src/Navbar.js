@@ -1,4 +1,6 @@
+
 import React from "react";
+
 
 function Navbar() {
 
@@ -24,11 +26,21 @@ function Navbar() {
     } 
 
     return (
+
+        
+
         <nav className='nav'>
+
             <div className='header'>
                 <a href='/'>Home</a>
                 Fitness App
+
                 <a href='/AddWorkOut'>Add Work Out</a>
+
+                
+                
+                
+
             </div>
             <div className='days'>
                 <button className="monday">MONDAY</button>
