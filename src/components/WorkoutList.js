@@ -10,18 +10,21 @@ export const WorkoutList = () => {
         <ListGroup className="mt-4">
             {workouts.map(workout => (
                 <ListGroupItem className="d-flex">
-                    {users.length > 0 ? (<>
-                    </>)
-                    : ()}
-                    <strong>{workout.name}</strong>
-                    <div className="ml-auto">
-                        <Link className="btn btn-warning mr-1" to={`/edit/${user.id}`}>
-                            Edit
-                        </Link>
-                        <Button onCLick={() => removeWorkout(workout.id)} color="danger">Delete</Button>
-                    </div>
-                </ListGroupItem>
-            ))}
+                    {workouts.length > 0 ? (
+                        <>
+                            <strong>{workout.name}</strong>
+                            <div className="ml-auto">
+                                <Link className="btn btn-warning mr-1" to={`/edit/${user.id}`}>
+                                    Edit
+                                </Link>
+                                <Button onCLick={() => removeWorkout(workout.id)} color="danger">Delete</Button>
+                            </div>
+                        </ListGroupItem>
+                    ))}
+                </>
+            ) : (
+                <h3>No Workouts</h3>
+            )}
         </ListGroup>
     );
 };
