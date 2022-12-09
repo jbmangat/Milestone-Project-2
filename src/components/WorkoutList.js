@@ -8,10 +8,10 @@ export const WorkoutList = () => {
     console.log(workouts)
     return (
         <ListGroup className="mt-4">
+        {workouts.length > 0 ? (
+            <>
             {workouts.map(workout => (
-                <ListGroupItem className="d-flex">
-                    {workouts.length > 0 ? (
-                        <>
+                        <ListGroupItem className="d-flex">
                             <strong>{workout.name}</strong>
                             <div className="ml-auto">
                                 <Link className="btn btn-warning mr-1" to={`/edit/${user.id}`}>
