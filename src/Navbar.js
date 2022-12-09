@@ -26,13 +26,21 @@ function Navbar() {
     } 
 
     return (
-        <nav className="nav">
+
+        
+
+        <nav className='nav'>
+
             <div className='header'>
-                <button className='home-btn'>Home</button>
+                <a href='/'>Home</a>
                 Fitness App
+
+                <a href='/AddWorkOut'>Add Work Out</a>
+
                 
-                <button className='add-btn'>Add Work Out</button>
                 
+                
+
             </div>
             <div className='days'>
                 <button className="monday">MONDAY</button>
