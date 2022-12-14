@@ -15,32 +15,22 @@ function Navbar() {
     // }
 
 
-    function addDayClass() {
-        //document.getElementById('').classList.add('');
-        return
-    }
+    // function addDayClass() {
+    //     //document.getElementById('').classList.add('');
+    //     return
+    // }
 
-    function removeDayClass() {
-        //document.getElementById('').classList.remove('');
-        return
-    } 
+    // function removeDayClass() {
+    //     //document.getElementById('').classList.remove('');
+    //     return
+    // } 
 
     return (
-
-        
-
-        <nav className='nav'>
-
+       <nav className='nav'>
             <div className='header'>
                 <a href='/'>Home</a>
                 Fitness App
-
-                <a href='/AddWorkOut'>Add Work Out</a>
-
-                
-                
-                
-
+                <a href='./pages/AddWorkOut'>Add Work Out</a>  
             </div>
             <div className='days'>
                 <button className="monday">MONDAY</button>

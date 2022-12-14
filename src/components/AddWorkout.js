@@ -13,7 +13,7 @@ export const AddWorkout = () => {
             </FormGroup>
             <Button type="submit">Submit</Button>
             <Link to="/" className="btn btn-danger ml-2">
-                Cancel
+                Cancel 
             </Link>
         </Form>
     );
