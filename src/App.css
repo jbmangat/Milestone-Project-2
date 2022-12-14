@@ -3,10 +3,10 @@
 }
 
 * {
-  background-color: #F4D35E;
+  background-color: #212529;
 }
 
-.App-logo {
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -41,7 +41,7 @@
   }
 }
 
-.nav .header{
+ .nav .header{
   display: flex;
   justify-content: space-around;
   padding-bottom: 5rem;
@@ -65,7 +65,7 @@
 .add-btn:hover {
   background-color: black;
   color:#F4D35E
-}
+} 
 
 .home-btn {
   width: 100px;
@@ -93,3 +93,4 @@
 footer {
   padding-top: 20rem;
 }
+*/
