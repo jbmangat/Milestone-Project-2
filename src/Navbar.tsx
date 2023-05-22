@@ -4,27 +4,6 @@ import React from "react";
 
 function Navbar() {
 
-    // classList documentation
-    // https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#wrapper
-
-
-    // toggle day class to show selected date and workout container OR use addDayClass + removeDayClass functions
-
-    // function toggleDayClass() {
-    // document.getElementById('').classList.toggle('');
-    // }
-
-
-    // function addDayClass() {
-    //     //document.getElementById('').classList.add('');
-    //     return
-    // }
-
-    // function removeDayClass() {
-    //     //document.getElementById('').classList.remove('');
-    //     return
-    // } 
-
     return (
        <nav className='nav'>
             <div className='header'>
